@@ -35,3 +35,7 @@ FastEthernet0/0 FastEthernet0/1
 Serial1/0 unassigned Serial1/1 unassigned Serial1/2 unassigned Serial1/3 unassigned R1#
 IP-Address OK? Method Status Protocol unassigned YES unset administratively down down 10.213.50.1 YES manual up up
 YES unset administratively down down YES unset administratively down down YES unset administratively down down YES unset administratively down down
+
+
+
+tetstttttt
