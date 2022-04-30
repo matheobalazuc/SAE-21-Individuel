@@ -86,6 +86,3 @@ ip dhcp class ec2lt
 !         
 no ip domain lookup
           
-SERVEUR-DHCP#conf t
-Enter configuration commands, one per line.  End with CNTL/Z.
-SERVEUR-DHCP(config)#ip dhcp pool vlan10
