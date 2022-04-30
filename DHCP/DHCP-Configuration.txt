@@ -1,18 +1,18 @@
 SERVEUR-DHCP #conf t
 Enter configuration commands, one per line.  End with CNTL/Z.
-SERVEUR-DHCP (config)#int f0/0
+SERVEUR-DHCP (config)#int f0/0                                                      #Commande pour accéder à l'interface 
 SERVEUR-DHCP (config-if)#ip address 192.168.50.5 255.255.255.0
 SERVEUR-DHCP(config-if)#no shut
 
 SERVEUR-DHCP#conf t
 Enter configuration commands, one per line.  End with CNTL/Z.
-SERVEUR-DHCP(config)#ip dhcp pool SI
-SERVEUR-DHCP(dhcp-config)#network 192.168.10.0 255.255.255.0
-SERVEUR-DHCP(dhcp-config)#dns-server 192.168.60.200
-SERVEUR-DHCP(dhcp-config)#default-router 192.168.10.254
+SERVEUR-DHCP(config)#ip dhcp pool SI                                                #Commande pour creer les pool de DHCP c'est à dire la défintion des                                                                                         réseaux pour le dhclient.  
+SERVEUR-DHCP(dhcp-config)#network 192.168.10.0 255.255.255.0                        #Commande pour ajouter le réseau 
+SERVEUR-DHCP(dhcp-config)#dns-server 192.168.60.200                                 #Commande pour ajouter le serveur DNS
+SERVEUR-DHCP(dhcp-config)#default-router 192.168.10.254                             #Commande pour ajouter l'adresse IP du routeur par defaut
 SERVEUR-DHCP(dhcp-config)#class ec2lt    
 SERVEUR-DHCP(config-dhcp-pool-class)#$ge 192.168.10.2 192.168.10.100         
-SERVEUR-DHCP(config-dhcp-pool-class)#address range 192.168.10.2 192.168.10.100
+SERVEUR-DHCP(config-dhcp-pool-class)#address range 192.168.10.2 192.168.10.100      #Commande pour l'ajout de range pour l'attribution des adresses IP
 SERVEUR-DHCP(config-dhcp-pool-class)#exit
 SERVEUR-DHCP(dhcp-config)#exit
 SERVEUR-DHCP(config)#ip dhcp pool Administratifs  
@@ -36,7 +36,7 @@ SERVEUR-DHCP#wr
 SERVEUR-DHCP#wr mem
 Building configuration...
 [OK]
-SERVEUR-DHCP#sh run
+SERVEUR-DHCP#sh run                                                                 #Commande pour consulter la config 
 Building configuration...
 
 Current configuration : 1811 bytes
