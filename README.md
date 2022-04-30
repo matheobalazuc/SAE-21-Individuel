@@ -16,4 +16,4 @@
 * Mathéo BALAZUC
 * Antoine BOURY-LE-STRAT
 
-![Image finale du projet GNS3](../SAE-21-Individuel/Image%20de%20l'%C3%A9volution%20du%20projet%20GNS3/Capture%20finale%20du%20projet%20GNS3-Lab418.png "Image finale du projet GNS3")
+![Image finale du projet GNS3](Image%20de%20l'%C3%A9volution%20du%20projet%20GNS3/Capture%20finale%20du%20projet%20GNS3-Lab418.png "Image finale du projet GNS3")
