@@ -3,4 +3,5 @@
 ## Construire un réseau informatique pour une petite structure
 ---
 
- - **Je suis en charge de la partie virtuel du projet, c'est a dire la conception du réseau demandé via GNS3.**
+ - **Je suis en charge de toute la partie virtuel du projet, c'est a dire la conception du réseau de l'entreprise via GNS3.**
+ - **J'ai également produit le site Web-Intranet de l'entreprise.**
