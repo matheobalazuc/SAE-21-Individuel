@@ -1,0 +1,77 @@
+SERVEUR-DHCP#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+SERVEUR-DHCP(config)#ip dhcp pool SI
+SERVEUR-DHCP(dhcp-config)#class ec2lt    
+SERVEUR-DHCP(config-dhcp-pool-class)#$ge 192.168.10.2 192.168.10.100         
+SERVEUR-DHCP(config-dhcp-pool-class)#address range 192.168.10.2 192.168.10.100
+SERVEUR-DHCP(config-dhcp-pool-class)#exit
+SERVEUR-DHCP(dhcp-config)#exit
+SERVEUR-DHCP(config)#ip dhcp pool Administratifs              
+SERVEUR-DHCP(dhcp-config)#class ec2lt                              
+SERVEUR-DHCP(config-dhcp-pool-class)#address range 192.168.20.3 192.168.20.100
+SERVEUR-DHCP(config-dhcp-pool-class)#exit
+SERVEUR-DHCP(dhcp-config)#exit
+SERVEUR-DHCP(config)#ip dhcp pool Commerciaux                 
+SERVEUR-DHCP(dhcp-config)#class ec2lt                              
+SERVEUR-DHCP(config-dhcp-pool-class)#address range 192.168.30.2 192.168.30.100
+SERVEUR-DHCP(config-dhcp-pool-class)#exit
+SERVEUR-DHCP(dhcp-config)#end
+SERVEUR-DHCP#wr 
+*Mar  1 00:21:43.963: %SYS-5-CONFIG_I: Configured from console by console
+SERVEUR-DHCP#wr mem
+Building configuration...
+[OK]
+SERVEUR-DHCP#sh run
+Building configuration...
+
+Current configuration : 1811 bytes
+!
+version 12.4
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname SERVEUR-DHCP
+!
+boot-start-marker
+boot-end-marker
+!
+!
+no aaa new-model
+memory-size iomem 5
+no ip icmp rate-limit unreachable
+ip cef
+!
+!
+no ip dhcp use vrf connected
+!
+ip dhcp pool SI
+   network 192.168.10.0 255.255.255.0
+   dns-server 192.168.60.200 
+   default-router 192.168.50.254 
+   class ec2lt
+      address range 192.168.10.2 192.168.10.100
+!         
+ip dhcp pool Administratifs
+   network 192.168.20.0 255.255.255.0
+   dns-server 192.168.60.200 
+   default-router 192.168.50.254 
+   class ec2lt
+      address range 192.168.20.3 192.168.20.100
+!         
+ip dhcp pool Commerciaux
+   network 192.168.30.0 255.255.255.0
+   dns-server 192.168.60.200 
+   default-router 192.168.50.254 
+   class ec2lt
+      address range 192.168.30.2 192.168.30.100
+!         
+!         
+ip dhcp class ec2lt
+!         
+no ip domain lookup
+          
+SERVEUR-DHCP#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+SERVEUR-DHCP(config)#ip dhcp pool vlan10
+
