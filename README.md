@@ -9,6 +9,8 @@
 
 ```Entreprise : Lab418```
 
+[Lien vers le dépôt GitHub du groupe (cliquez-ici).](https://github.com/s4uc3-1s-n0t-sus/SAE21_IUTBZ)
+
 > Membres de l'entreprise : 
 * Lorenzo MATILLA-NORO
 * Mathéo BALAZUC
