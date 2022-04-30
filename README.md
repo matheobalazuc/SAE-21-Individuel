@@ -3,8 +3,8 @@
 ## Construire un réseau informatique pour une petite structure
 ---
 
- - **Je suis en charge de toute la partie virtuel du projet, c'est a dire la conception du réseau de l'entreprise via GNS3.**
- - **J'ai également produit le site Web-Intranet de l'entreprise.**
+ - **Je suis en charge de toute la partie virtuel du projet, c'est a dire la conception du réseau de l'entreprise via GNS3. @matheobalazuc**
+ - **J'ai également produit le site Web-Intranet de l'entreprise. @matheobalazuc**
 
 
 ```Entreprise : Lab418```
